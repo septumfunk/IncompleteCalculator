@@ -4,7 +4,7 @@ namespace IncompleteApp
 {
     public partial class Calc : Form
     {
-        private readonly float RUN_SPEED = 25f;
+        private readonly float RUN_SPEED = 20f;
         private readonly int RUN_DISTANCE = 10;
         private string? calcTrue = null;
 
