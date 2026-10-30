@@ -11,5 +11,6 @@ and orange so it looks very clickable and obvious. I have a habit of turning pro
   <summary><h1>Sample Video (Spoilers)</h1></summary>
   
   https://github.com/user-attachments/assets/c1682f76-338d-47bc-97ab-06ff41a90b92
+  
   I did manage to use it once, but I couldn't get it on my trackpad for the video lol
 </details>
