@@ -1,6 +1,6 @@
 ﻿namespace IncompleteApp
 {
-    partial class Form1
+    partial class Calc
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             runTimer = new System.Windows.Forms.Timer(components);
-            calcMain = new TextBox();
             buttonZero = new Button();
             buttonOne = new Button();
             buttonTwo = new Button();
@@ -48,21 +47,13 @@
             addition = new Button();
             multiplication = new Button();
             backspace = new Button();
+            calcMain = new Label();
             SuspendLayout();
             // 
             // runTimer
             // 
             runTimer.Interval = 16;
             runTimer.Tick += runTimer_Tick;
-            // 
-            // calcMain
-            // 
-            calcMain.Font = new Font("Courier New", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            calcMain.Location = new Point(12, 12);
-            calcMain.Name = "calcMain";
-            calcMain.PlaceholderText = "0";
-            calcMain.Size = new Size(554, 80);
-            calcMain.TabIndex = 0;
             // 
             // buttonZero
             // 
@@ -196,6 +187,7 @@
             equals.TabIndex = 12;
             equals.Text = "=";
             equals.UseVisualStyleBackColor = false;
+            equals.Click += equals_Click;
             // 
             // division
             // 
@@ -264,11 +256,25 @@
             backspace.UseVisualStyleBackColor = false;
             backspace.Click += buttonValued_Click;
             // 
-            // Form1
+            // calcMain
+            // 
+            calcMain.BackColor = Color.White;
+            calcMain.BorderStyle = BorderStyle.Fixed3D;
+            calcMain.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            calcMain.Location = new Point(12, 9);
+            calcMain.Name = "calcMain";
+            calcMain.Padding = new Padding(5);
+            calcMain.Size = new Size(554, 100);
+            calcMain.TabIndex = 18;
+            calcMain.Text = "0";
+            calcMain.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // Calc
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(578, 616);
+            Controls.Add(calcMain);
             Controls.Add(backspace);
             Controls.Add(multiplication);
             Controls.Add(addition);
@@ -286,17 +292,14 @@
             Controls.Add(buttonTwo);
             Controls.Add(buttonOne);
             Controls.Add(buttonZero);
-            Controls.Add(calcMain);
-            Name = "Form1";
-            Text = "Incomplete App";
+            Name = "Calc";
+            Text = "Incomplete Calculator";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private System.Windows.Forms.Timer runTimer;
-        private TextBox calcMain;
         private Button buttonZero;
         private Button buttonOne;
         private Button buttonTwo;
@@ -314,5 +317,6 @@
         private Button addition;
         private Button multiplication;
         private Button backspace;
+        private Label calcMain;
     }
 }
