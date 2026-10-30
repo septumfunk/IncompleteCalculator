@@ -36,17 +36,18 @@
             buttonTwo = new Button();
             buttonThree = new Button();
             buttonFour = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
+            buttonFive = new Button();
+            buttonSix = new Button();
+            buttonSeven = new Button();
+            buttonEight = new Button();
+            buttonNine = new Button();
+            period = new Button();
+            equals = new Button();
+            division = new Button();
+            subtraction = new Button();
+            addition = new Button();
+            multiplication = new Button();
+            backspace = new Button();
             SuspendLayout();
             // 
             // runTimer
@@ -72,6 +73,7 @@
             buttonZero.TabIndex = 1;
             buttonZero.Text = "0";
             buttonZero.UseVisualStyleBackColor = true;
+            buttonZero.Click += buttonValued_Click;
             // 
             // buttonOne
             // 
@@ -82,7 +84,7 @@
             buttonOne.TabIndex = 2;
             buttonOne.Text = "1";
             buttonOne.UseVisualStyleBackColor = true;
-            buttonOne.Click += buttonOne_Click;
+            buttonOne.Click += buttonValued_Click;
             // 
             // buttonTwo
             // 
@@ -93,6 +95,7 @@
             buttonTwo.TabIndex = 3;
             buttonTwo.Text = "2";
             buttonTwo.UseVisualStyleBackColor = true;
+            buttonTwo.Click += buttonValued_Click;
             // 
             // buttonThree
             // 
@@ -103,6 +106,7 @@
             buttonThree.TabIndex = 4;
             buttonThree.Text = "3";
             buttonThree.UseVisualStyleBackColor = true;
+            buttonThree.Click += buttonValued_Click;
             // 
             // buttonFour
             // 
@@ -113,143 +117,170 @@
             buttonFour.TabIndex = 5;
             buttonFour.Text = "4";
             buttonFour.UseVisualStyleBackColor = true;
+            buttonFour.Click += buttonValued_Click;
             // 
-            // button1
+            // buttonFive
             // 
-            button1.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(143, 233);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 88);
-            button1.TabIndex = 6;
-            button1.Text = "5";
-            button1.UseVisualStyleBackColor = true;
+            buttonFive.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonFive.Location = new Point(143, 233);
+            buttonFive.Name = "buttonFive";
+            buttonFive.Size = new Size(125, 88);
+            buttonFive.TabIndex = 6;
+            buttonFive.Text = "5";
+            buttonFive.UseVisualStyleBackColor = true;
+            buttonFive.Click += buttonValued_Click;
             // 
-            // button2
+            // buttonSix
             // 
-            button2.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(274, 233);
-            button2.Name = "button2";
-            button2.Size = new Size(125, 88);
-            button2.TabIndex = 7;
-            button2.Text = "6";
-            button2.UseVisualStyleBackColor = true;
+            buttonSix.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonSix.Location = new Point(274, 233);
+            buttonSix.Name = "buttonSix";
+            buttonSix.Size = new Size(125, 88);
+            buttonSix.TabIndex = 7;
+            buttonSix.Text = "6";
+            buttonSix.UseVisualStyleBackColor = true;
+            buttonSix.Click += buttonValued_Click;
             // 
-            // button3
+            // buttonSeven
             // 
-            button3.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(12, 327);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 88);
-            button3.TabIndex = 8;
-            button3.Text = "7";
-            button3.UseVisualStyleBackColor = true;
+            buttonSeven.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonSeven.Location = new Point(12, 327);
+            buttonSeven.Name = "buttonSeven";
+            buttonSeven.Size = new Size(125, 88);
+            buttonSeven.TabIndex = 8;
+            buttonSeven.Text = "7";
+            buttonSeven.UseVisualStyleBackColor = true;
+            buttonSeven.Click += buttonValued_Click;
             // 
-            // button4
+            // buttonEight
             // 
-            button4.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(143, 327);
-            button4.Name = "button4";
-            button4.Size = new Size(125, 88);
-            button4.TabIndex = 9;
-            button4.Text = "8";
-            button4.UseVisualStyleBackColor = true;
+            buttonEight.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonEight.Location = new Point(143, 327);
+            buttonEight.Name = "buttonEight";
+            buttonEight.Size = new Size(125, 88);
+            buttonEight.TabIndex = 9;
+            buttonEight.Text = "8";
+            buttonEight.UseVisualStyleBackColor = true;
+            buttonEight.Click += buttonValued_Click;
             // 
-            // button5
+            // buttonNine
             // 
-            button5.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(274, 327);
-            button5.Name = "button5";
-            button5.Size = new Size(125, 88);
-            button5.TabIndex = 10;
-            button5.Text = "9";
-            button5.UseVisualStyleBackColor = true;
+            buttonNine.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonNine.Location = new Point(274, 327);
+            buttonNine.Name = "buttonNine";
+            buttonNine.Size = new Size(125, 88);
+            buttonNine.TabIndex = 10;
+            buttonNine.Text = "9";
+            buttonNine.UseVisualStyleBackColor = true;
+            buttonNine.Click += buttonValued_Click;
             // 
-            // button6
+            // period
             // 
-            button6.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(12, 421);
-            button6.Name = "button6";
-            button6.Size = new Size(125, 88);
-            button6.TabIndex = 11;
-            button6.Text = ".";
-            button6.UseVisualStyleBackColor = true;
+            period.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            period.Location = new Point(12, 421);
+            period.Name = "period";
+            period.Size = new Size(125, 88);
+            period.TabIndex = 11;
+            period.Text = ".";
+            period.UseVisualStyleBackColor = true;
+            period.Click += buttonValued_Click;
             // 
-            // button7
+            // equals
             // 
-            button7.BackColor = Color.FromArgb(255, 128, 0);
-            button7.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = SystemColors.HighlightText;
-            button7.Location = new Point(12, 514);
-            button7.Name = "button7";
-            button7.Size = new Size(554, 88);
-            button7.TabIndex = 12;
-            button7.Text = "=";
-            button7.UseVisualStyleBackColor = false;
+            equals.BackColor = Color.FromArgb(255, 128, 0);
+            equals.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            equals.ForeColor = SystemColors.HighlightText;
+            equals.Location = new Point(12, 514);
+            equals.Name = "equals";
+            equals.Size = new Size(554, 88);
+            equals.TabIndex = 12;
+            equals.Text = "=";
+            equals.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // division
             // 
-            button8.BackColor = SystemColors.ControlDarkDark;
-            button8.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = SystemColors.HighlightText;
-            button8.Location = new Point(441, 327);
-            button8.Name = "button8";
-            button8.Size = new Size(125, 88);
-            button8.TabIndex = 13;
-            button8.Text = "÷";
-            button8.UseVisualStyleBackColor = false;
+            division.BackColor = SystemColors.ControlDarkDark;
+            division.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            division.ForeColor = SystemColors.HighlightText;
+            division.Location = new Point(441, 421);
+            division.Name = "division";
+            division.Size = new Size(125, 88);
+            division.TabIndex = 13;
+            division.Text = "÷";
+            division.UseVisualStyleBackColor = false;
+            division.Click += buttonValued_Click;
             // 
-            // button9
+            // subtraction
             // 
-            button9.BackColor = SystemColors.ControlDarkDark;
-            button9.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.ForeColor = SystemColors.HighlightText;
-            button9.Location = new Point(441, 233);
-            button9.Name = "button9";
-            button9.Size = new Size(125, 88);
-            button9.TabIndex = 14;
-            button9.Text = "-";
-            button9.UseVisualStyleBackColor = false;
+            subtraction.BackColor = SystemColors.ControlDarkDark;
+            subtraction.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            subtraction.ForeColor = SystemColors.HighlightText;
+            subtraction.Location = new Point(441, 233);
+            subtraction.Name = "subtraction";
+            subtraction.Size = new Size(125, 88);
+            subtraction.TabIndex = 14;
+            subtraction.Text = "-";
+            subtraction.UseVisualStyleBackColor = false;
+            subtraction.Click += buttonValued_Click;
             // 
-            // button10
+            // addition
             // 
-            button10.BackColor = SystemColors.ControlDarkDark;
-            button10.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.ForeColor = SystemColors.HighlightText;
-            button10.Location = new Point(441, 139);
-            button10.Name = "button10";
-            button10.Size = new Size(125, 88);
-            button10.TabIndex = 15;
-            button10.Text = "+";
-            button10.UseVisualStyleBackColor = false;
+            addition.BackColor = SystemColors.ControlDarkDark;
+            addition.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addition.ForeColor = SystemColors.HighlightText;
+            addition.Location = new Point(441, 139);
+            addition.Name = "addition";
+            addition.Size = new Size(125, 88);
+            addition.TabIndex = 15;
+            addition.Text = "+";
+            addition.UseVisualStyleBackColor = false;
+            addition.Click += buttonValued_Click;
             // 
-            // button11
+            // multiplication
             // 
-            button11.BackColor = SystemColors.ControlDarkDark;
-            button11.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button11.ForeColor = SystemColors.HighlightText;
-            button11.Location = new Point(441, 421);
-            button11.Name = "button11";
-            button11.Size = new Size(125, 88);
-            button11.TabIndex = 16;
-            button11.Text = "×";
-            button11.UseVisualStyleBackColor = false;
+            multiplication.BackColor = SystemColors.ControlDarkDark;
+            multiplication.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            multiplication.ForeColor = SystemColors.HighlightText;
+            multiplication.Location = new Point(441, 327);
+            multiplication.Name = "multiplication";
+            multiplication.Size = new Size(125, 88);
+            multiplication.TabIndex = 16;
+            multiplication.Text = "×";
+            multiplication.UseVisualStyleBackColor = false;
+            multiplication.Click += buttonValued_Click;
+            // 
+            // backspace
+            // 
+            backspace.BackColor = SystemColors.ControlDarkDark;
+            backspace.Font = new Font("Courier New", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            backspace.ForeColor = SystemColors.HighlightText;
+            backspace.ImageAlign = ContentAlignment.TopCenter;
+            backspace.Location = new Point(274, 421);
+            backspace.Name = "backspace";
+            backspace.Size = new Size(125, 88);
+            backspace.TabIndex = 17;
+            backspace.Text = "←";
+            backspace.TextAlign = ContentAlignment.TopCenter;
+            backspace.UseVisualStyleBackColor = false;
+            backspace.Click += buttonValued_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(578, 616);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(backspace);
+            Controls.Add(multiplication);
+            Controls.Add(addition);
+            Controls.Add(subtraction);
+            Controls.Add(division);
+            Controls.Add(equals);
+            Controls.Add(period);
+            Controls.Add(buttonNine);
+            Controls.Add(buttonEight);
+            Controls.Add(buttonSeven);
+            Controls.Add(buttonSix);
+            Controls.Add(buttonFive);
             Controls.Add(buttonFour);
             Controls.Add(buttonThree);
             Controls.Add(buttonTwo);
@@ -271,16 +302,17 @@
         private Button buttonTwo;
         private Button buttonThree;
         private Button buttonFour;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
+        private Button buttonFive;
+        private Button buttonSix;
+        private Button buttonSeven;
+        private Button buttonEight;
+        private Button buttonNine;
+        private Button period;
+        private Button equals;
+        private Button division;
+        private Button subtraction;
+        private Button addition;
+        private Button multiplication;
+        private Button backspace;
     }
 }
