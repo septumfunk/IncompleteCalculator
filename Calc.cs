@@ -42,6 +42,7 @@ namespace IncompleteApp
                     // reset the calculation if the previous result was displayed
                     calcTrue = "";
                     calcMain.Text = "";
+                    runTimer.Start();
                 }
 
                 switch (clickedButton.Name)
@@ -74,6 +75,8 @@ namespace IncompleteApp
             if (calcTrue == null || calcTrue == "")
                 return;
             double result;
+
+            runTimer.Stop();
 
             try
             {

@@ -52,7 +52,7 @@
             // 
             // runTimer
             // 
-            runTimer.Interval = 16;
+            runTimer.Interval = 5;
             runTimer.Tick += runTimer_Tick;
             // 
             // buttonZero
